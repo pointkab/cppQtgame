@@ -11,7 +11,6 @@
 #include "QToolTip"
 #define WIDTH 1700
 #define HEIGHT 900
-//todo 攻击类的实现
 //todo 音效系统
 GameUi::GameUi(QWidget *parent):QMainWindow(parent)  {
     this->initGameWindow();
@@ -149,6 +148,9 @@ void GameUi::mousePressEvent(QMouseEvent *e) {
         player->Move(e->x()-45,e->y()-49);
         player->set_IsReach(false);
     }
+    if (e->button() == Qt::RightButton){
+        player->attack(e->x(),e->y());
+    }
 }
 
 void GameUi::paintEvent(QPaintEvent*) {
@@ -160,6 +162,9 @@ void GameUi::paintEvent(QPaintEvent*) {
     //for 循环画怪
     if (player->_liveStatus)
     a.drawPixmap(player->Get_X(),player->Get_Y(),QPixmap(player->Get_imgPath()));
+    if (player->Get_attack()&&player->Get_attack()->IsVisable){
+        a.drawPixmap(player->Get_attack()->Get_X(),player->Get_attack()->Get_Y(),QPixmap(player->Get_attack()->Get_ImgPath()));
+    }
 }
 
 void GameUi::initGameWindow() {
@@ -214,11 +219,22 @@ void GameUi::DealFun() {
         Arg temp(monsters[i]->Get_X(),monsters[i]->Get_Y(),monsters[i]->Get_dx(),monsters[i]->Get_dy(),monsters[i]->Get_speed(),monsters[i]->Get_isreach());
         tempPoint = RoleGo(temp);
         monsters[i]->SetX_Y(tempPoint.x(),tempPoint.y());
-        MonsterRole::MonsterLocateArray[i][0] = tempPoint.x();
-        MonsterRole::MonsterLocateArray[i][1] = tempPoint.y();
+        MonsterRole::MonsterLocateArray[i][0] = monsters[i]->Get_X();
+        MonsterRole::MonsterLocateArray[i][1] = monsters[i]->Get_Y();
         monsters[i]->Set_isReach(temp.IsReach);
     }
+    if (player->Get_attack()){
+        if (!player->Get_attack()->Get_Isreach()){
+            Arg temp(player->Get_attack()->Get_X(),player->Get_attack()->Get_Y(),player->Get_attack()->Get_dx(),player->Get_attack()->Get_dy(),player->Get_attack()->Get_speed(),player->Get_attack()->Get_Isreach());
+            tempPoint = RoleGo(temp);
+            player->Get_attack()->updateSendPoint(tempPoint.x(),tempPoint.y());
+            player->Get_attack()->set_Isreach(temp.IsReach);
+        } else{
+            player->Get_attack()->IsVisable = false;
+        }
+    }
     IsOverlap();
+    AttackJudge();
     if (overlapNum){
         OverlapMonster(overlapNum);
         player->set_Exp(overlapNum);
@@ -244,10 +260,28 @@ void GameUi::IsOverlap() {
     }
 }
 
+void GameUi::AttackJudge() {
+    if (player->Get_attack())
+    {for (int i = 0; i < MonsterRole::markNum;i++){
+            if (monsters[i]->_liveStatus){
+                if (abs(player->Get_attack()->Get_X() - monsters[i]->Get_X() -45) < 30 && abs(player->Get_attack()->Get_Y() - monsters[i]->Get_Y()-49) < 38)
+                {
+                    monsters[i]->_liveStatus = 0;
+                    player->set_Exp(1);
+                    player->IsUpgrade();
+                    player->updateBloodBar();
+                    player->Get_attack()->IsVisable = false;
+                    player->Get_attack()->set_Isreach(true);
+                    emit MonsterBeDefeat();
+                }
+            }
+        }
+    }
+}
+
 void GameUi::ReMoveDeadMonster() {
     for (int i = 0; i < overlapNum;i++){
         monsters[overlapArray[i]]->_liveStatus = 0;
-
         emit MonsterBeDefeat();
     }
     for (int i = 0; i < MonsterNumber;i++){

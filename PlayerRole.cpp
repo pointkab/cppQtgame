@@ -25,6 +25,7 @@ PlayerRole::PlayerRole(){
     _attack = 10;
     IsReach = true;
     _skill = "FlashFiveWhips";
+    playerAttack = NULL;
     CreatBloodBar();
     set_imgPath();
 }
@@ -49,7 +50,17 @@ void PlayerRole::updateBloodBar() {
 }
 
 void PlayerRole::IsUpgrade() {
-    if (_exp > 2*10*(_level-1)){
+    if (_exp > 2*10*_level*(_level-1)){
         Upgrade();
     }
+}
+
+void PlayerRole::attack(int x, int y) {
+    if (playerAttack == NULL) {
+        playerAttack = new Attack();
+    }
+    playerAttack->set_desPoint(x-10,y-10);
+    playerAttack->set_sendPoint(_locatedX+45,_locatedY+49);
+    playerAttack->IsVisable = true;
+    playerAttack->set_Isreach(false);
 }

@@ -50,6 +50,7 @@ public:
             monsterTimer->start(1000/24);
         }
     };
+    void AttackJudge();
 signals:
     void sendClose();
     void MonsterBeDefeat();

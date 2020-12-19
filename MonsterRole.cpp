@@ -26,7 +26,6 @@ void MonsterRole::set_imgPath() {
     this->_imgPath = QCoreApplication::applicationDirPath() + "../../qrc/Monster.png";
 }
 
-
 QPoint MonsterRole::locateRandCreate() {
     QTime time = QTime::currentTime();
     QPoint result;

@@ -6,6 +6,7 @@
 #define QTGAME_PLAYERROLE_H
 #include "Role.h"
 #include "QProgressBar"
+#include "Attack.h"
 
 class PlayerRole: public Role{
 public:
@@ -31,6 +32,7 @@ public:
         else
             return true;
     };
+    Attack* Get_attack(){return playerAttack;};
     void SetX_Y(int _x,int _y){
         _locatedX +=_x;
         _locatedY +=_y;
@@ -61,6 +63,7 @@ public:
     void hideBloodBar(){
         playerBloodBar->setVisible(false);
     };
+    void attack(int x,int y);
     QString Get_imgPath(){return _imgPath;};
 private:
     void CreatBloodBar();
@@ -87,6 +90,7 @@ private:
     QString _skill;
     //贴图地址
     QString _imgPath;
+    Attack *playerAttack;
 };
 
 

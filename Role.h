@@ -8,8 +8,6 @@
 
 class Role {
 public:
-    //virtual void Move();
-    //virtual void Attack() = 0;
     virtual void set_imgPath() = 0;
 private:
     //位置坐标
