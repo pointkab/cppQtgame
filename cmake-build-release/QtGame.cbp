@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="QtGame"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\Qt\;CMake Files\..\..\Qt\5.14.2\;CMake Files\..\..\Qt\5.14.2\mingw73_64\;CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\;CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\;CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\;CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QtGame">
+				<Option output="D:/cppProjecte/QtGame/cmake-build-release/QtGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="D:/cppProjecte/QtGame/cmake-build-release"/>
+					<Add directory="D:/cppProjecte/QtGame"/>
+					<Add directory="D:/cppProjecte/QtGame/cmake-build-release/QtGame_autogen/include"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtCore"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/./mkspecs/win32-g++"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtWidgets"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtGui"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtANGLE"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 QtGame"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QtGame/fast">
+				<Option output="D:/cppProjecte/QtGame/cmake-build-release/QtGame.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option object_output="./"/>
+				<Option type="0"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add directory="D:/cppProjecte/QtGame/cmake-build-release"/>
+					<Add directory="D:/cppProjecte/QtGame"/>
+					<Add directory="D:/cppProjecte/QtGame/cmake-build-release/QtGame_autogen/include"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtCore"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/./mkspecs/win32-g++"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtWidgets"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtGui"/>
+					<Add directory="D:/Qt/5.14.2/mingw73_64/include/QtANGLE"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 QtGame/fast"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="QtGame_autogen">
+				<Option working_dir="D:/cppProjecte/QtGame/cmake-build-release"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 QtGame_autogen"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/cppProjecte/QtGame/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/cppProjecte/QtGame/Attack.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/Attack.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/GameUi.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/GameUi.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/MonsterRole.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/MonsterRole.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/PlayerRole.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/PlayerRole.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/Role.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/cmake-build-release/QtGame_autogen/mocs_compilation.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/main.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/mainwindow.cpp">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/mainwindow.h">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/mainwindow.ui">
+			<Option target="QtGame"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="D:/cppProjecte/QtGame/../../Qt/5.14.2/mingw73_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\Qt\5.14.2\mingw73_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

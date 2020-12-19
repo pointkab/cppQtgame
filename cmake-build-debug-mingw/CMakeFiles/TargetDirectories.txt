@@ -1,0 +1,4 @@
+D:/cppProjecte/QtGame/cmake-build-debug-mingw/CMakeFiles/QtGame.dir
+D:/cppProjecte/QtGame/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+D:/cppProjecte/QtGame/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+D:/cppProjecte/QtGame/cmake-build-debug-mingw/CMakeFiles/QtGame_autogen.dir

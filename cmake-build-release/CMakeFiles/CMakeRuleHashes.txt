@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+5e8b42c299c8cea2fea027920b837a2b CMakeFiles/QtGame_autogen
